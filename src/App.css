@@ -13,7 +13,7 @@
   border: 1rem;
   height: 2rem;
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .App-logo {
