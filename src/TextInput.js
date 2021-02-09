@@ -16,14 +16,14 @@ function TextInput(props) {
     }
 
     return <footer className="text-input">
-        <input
+        <input className="input"
         placeholder='Write your message'
             value={text}
             onChange={e=> setText(e.target.value)}
             onKeyPress={KeyPressed}
         />
-        <button onClick={sendMessage} disabled={!text}>
-            Send
+        <button className="send-button" onClick={sendMessage} disabled={!text}>
+        ↑
         </button>
     </footer>
 }
