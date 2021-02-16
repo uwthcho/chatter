@@ -11,20 +11,20 @@ function NamePicker(props){
         setShowInput(false)   
         localStorage.setItem('username', username)     
     }
-    
+
     if (showInput) {
         return <div className="name-picker">
             <input value={username}
                 onChange={e=> setUsername(e.target.value)}
             />
-            <button onClick={save}>OK</button>
+            <button onClick={save}>SAVE</button>
         </div>
     }
 
     return <div className="name-picker">
         <div>{username}</div>
         <button onClick={()=> setShowInput(true)}>
-            EDIT
+            EDIT NAME
         </button>
     </div>
 }
